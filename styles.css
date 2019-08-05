@@ -1,4 +1,16 @@
-.green {
-    background-color: green;
+.cite-navigation {
+    background-color: #000000;
+}
 
+.main-footer {
+    background-color: #252525;
+}
+
+.main-body {
+    background-image: url("./img/background picture.jpg");
+    background-repeat: no-repeat;
+}
+
+.index {
+    background-image: url("./img/noisy background.jpg");
 }
