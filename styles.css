@@ -2,6 +2,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
  body {
      margin: 0;
      padding: 0;
@@ -18,9 +19,29 @@ html {
      background-repeat: no-repeat;
      background-position: top center;
  }
+
  a {
      text-decoration: none;
  }
+
+ .button {
+     font-size: inherit;
+
+     color: #ffffff;
+     text-align: center;
+     vertical-align: middle;
+     text-transform: uppercase;
+
+     background-color: #000000;
+     border: none;
+ }
+
+ .button:hover,
+ .button:focus,
+ .button:active {
+     background-color: #663d15;
+ }
+
  .main-navigation {
      font-size: 16px;
      line-height: 20px;
@@ -28,57 +49,109 @@ html {
 
      background-color: #000000;
  }
+
  .cite-navigation,
  .user-navigation {
      list-style: none;
  }
+
  .cite-navigation a,
  .user-navigation a {
      color: #ffffff;
  }
- ul {
-     margin: 0 20px;
-     padding: 0;
+
+ .cite-navigation:hover,
+ .cite-navigation:focus,
+ .user-navigation:hover,
+ .user-navigation:focus {
+     background-color: #242424;
+ }
+
+ .features-list {
      list-style: none;
  }
 
- h1 {
-     margin: 36px 0;
-     font-size: 36px;
+ .feature-item{
+    text-align: center;
+ }
+
+ .feature-item h3{
+     font-size: 30px;
      line-height: 42px;
  }
-h2 {
-    margin: 24px 0;
-    font-size: 24px;
-    line-height: 28px;
+
+.index-columns {
+    color: #000000;
+
+    background-color: #f8f5f2;
+    background-image: url("./img/noisy background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
 }
-h1 {
-    margin: 18px 0;
-    font-size: 18px;
-    line-height: 20px;
+
+.index-columns h2 {
+    font-size: 30px;
+    line-height: 42px;
 }
 
+.news-list {
+  list-style: none;
+}
 
+.news-item time {
+    text-transform: none;
+}
 
+.gallery-content {
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
 
+.appoitment-item input {
+    font: inherit;
 
+    background-color: transparent;
+    border: 2px solid #000000;
+}
 
-/*
-.cite-navigation {
-    background-color: #000000;
+.appoitment-item input:focus {
+    border-color: #663d15;
+    outline: none;
 }
 
 .main-footer {
-    background-color: #252525;
+    color: #ffffff;
+
+    background-color: #212121;
+    background-image: url("/.img/pattern-dark.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
 }
 
-.main-body {
-    background-image: url("./img/background picture.jpg");
-    background-repeat: no-repeat;
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-.index {
-    background-image: url("./img/noisy background.jpg");
+.footer-contacts:hover,
+.footer-contacts:focus {
+    text-decoration: none;
 }
 
- */
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+
