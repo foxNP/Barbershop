@@ -20,6 +20,25 @@ html {
      background-position: top center;
  }
 
+ .inner-page {
+     color: #000000;
+
+     background-color: #f8f5f2;
+     background-image: url("./img/noisy background.jpg");
+     background-position: 0 0;
+     background-repeat: repeat;
+ }
+
+ .inner-page h1 {
+     font-size: 30px;
+     line-height: 42px;
+ }
+
+ .inner-page h3 {
+     font-size: 24px;
+     line-height: 30px;
+ }
+
  a {
      text-decoration: none;
  }
@@ -35,6 +54,11 @@ html {
      background-color: #000000;
      border: none;
  }
+
+ .breadcrumbs {
+     list-style: none;
+ }
+
 
  .button:hover,
  .button:focus,
@@ -119,6 +143,26 @@ html {
     outline: none;
 }
 
+.pagination-item-current:hover,
+.pagination-item-current:focus,
+.pagination-item-current:active {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.product-photo-prewiev {
+    list-style: none;
+}
+
+.product-photo-prewiev li {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-full {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
 .main-footer {
     color: #ffffff;
 
@@ -133,8 +177,8 @@ html {
     text-decoration: underline;
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts a:hover,
+.footer-contacts a:focus {
     text-decoration: none;
 }
 
@@ -142,7 +186,7 @@ html {
     text-align: center;
 }
 
-.footer-social ul {
+.footer-social {
     list-style: none;
 }
 
@@ -154,4 +198,49 @@ html {
     text-align: center;
 }
 
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: #000000;
 
+    background-color: #ffffff;
+}
+
+
+.modal {
+    color: #000000;
+
+    background-color: #f8f3f0;
+    background-image: url("./img/noisy background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+    outline: none;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+
+.login-form a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.login-form a:hover,
+.login-form a:focus {
+    text-decoration: none;
+}
