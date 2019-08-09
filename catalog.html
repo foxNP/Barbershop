@@ -2,18 +2,18 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Барбершоп "Бородинский"</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="./normalize.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 <header class="main-header">
     <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-            <img src="index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+            <img src="./img/svg/logo.svg" width="111" height="24" alt="Логотип барбершопa «Бородинский»">
         </a>
-        <ul class="cite navigation">
+        <ul class="cite-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="price.html">Прайс-лист</a></li>
@@ -30,7 +30,7 @@
     <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
-        <li class="breadcrumbs-current">Средства для ухода</li>
+        <li>Средства для ухода</li>
     </ul>
     <section class="filters">
         <h2 class="visually-hidden">Список фильтров</h2>
@@ -88,7 +88,7 @@
     <section class="catalog">
         <h2 class="visually-hidden">Средства для ухода</h2>
         <ul class="catalog-list">
-            <li>
+            <li class="catalog-item">
                 <h3>
                     <a href="catalog-item.html">
                         <span class="catalog-category">Набор для путешествий</span>
@@ -104,7 +104,7 @@
                 <b>2 900 &#8381</b>
                 <a class="button" href="#">Купить</a>
             </li>
-            <li>
+            <li class="catalog-item">
                 <h3>
                     <a href="catalog-item.html">
                         <span class="catalog-category">Увлажняющий кондиционер</span>
@@ -135,7 +135,7 @@
                      <a class="button" href="#">Купить</a>
                   </div>
              </li>
-            <li>
+            <li class="catalog-item">
                 <h3>
                     <a href="catalog-item.html">
                         <span class="catalog-category">Глина для укладки волос</span>
@@ -151,7 +151,7 @@
                 <b>500 &#8381</b>
                 <a class="button" href="#">Купить</a>
             </li>
-            <li>
+            <li class="catalog-item">
                 <h3>
                     <a href="catalog-item.html">
                         <span class="catalog-category">"Гель для волос"</span>
@@ -167,7 +167,7 @@
                 <b>300 &#8381</b>
                 <a class="button" href="#">Купить</a>
             </li>
-            <li>
+            <li class="catalog-item">
                 <h3>
                     <a href="catalog-item.html">
                         <span class="catalog-category">Набор для бритья</span>
@@ -200,21 +200,39 @@
         Телефон: +7 (812) 666-02-66
     </p>
     <div class="footer-social">
-        <b>Давайте дружить!</b>
-        <a href="#" class="social-button"><img src="#" alt="В контакте"></a>
-        <a href="#" class="social-button"><img src="#" alt="Фейсбук"></a>
-        <a href="#" class="social-button"><img src="#" alt="Инстаграм"></a>
+        <span>Давайте дружить!</span>
+        <ul class="footer-social"
+        <li href="#" class="social-button"><img src="#" alt="В контакте"></li>
+        <li href="#" class="social-button"><img src="#" alt="Фейсбук"></li>
+        <li href="#" class="social-button"><img src="#" alt="Инстаграм"></li>
+        </ul>
     </div>
     <div class="footer-copyright">
-        <b>Разработано</b>
+        <span>Разработано:</span>
         <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
 </footer>
+
 <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
-    <!--Здесь будет форма-->
-    <span class="modal-close">x</span>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label class="visually-hidden" for="user-login">Логин</label><input type="text" class="login-icon-user" name="login" value="" placeholder="Логин" id="user-login">
+        </p>
+        <p>
+            <label class="visually-hidden" for="user-password">Пароль</label><input type="password" class="login-icon-password" name="password" value="" placeholder="Пароль" id="user-password">
+        </p>
+        <p class="login-password-info">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember" class="visually-hidden">
+                <span class="checkbox-indicator"></span> Запомните меня
+            </label>
+            <a class=""restore href="#">Я забыл пароль!</a>
+            <button class="button" type="submit">Войти</button>
+        </p>
+    </form>
+    <button class="modal-close">Закрыть</button>
 </section>
 </body>
 </html>

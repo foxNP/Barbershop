@@ -59,6 +59,18 @@ html {
      list-style: none;
  }
 
+ .breadcrumbs a {
+     color: #000000;
+ }
+
+.breadcrumbs li:last-child {
+    color: #aba9a7;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
 
  .button:hover,
  .button:focus,
@@ -143,11 +155,51 @@ html {
     outline: none;
 }
 
-.pagination-item-current:hover,
-.pagination-item-current:focus,
-.pagination-item-current:active {
+.filter ul {
+    list-style: none;
+    line-height:  18px;
+}
+
+.filter legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: #663d15;
+}
+
+.filter-input:disabled + label {
     color: #000000;
 
+    opacity: 0.5;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #ffffff;
+
+    background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
     background-color: #ffffff;
 }
 
@@ -161,6 +213,81 @@ html {
 
 .product-photo-full {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+    text-align: right;
+    color: #aeaeae;
+}
+
+ .product-price b {
+     text-align: center;
+
+     background-color: #e5e5e5;
+ }
+
+ .catalog-item b {
+     line-height: 18px;
+     text-align: center;
+
+     background-color: #e5e5e5;
+ }
+
+ .catalog-item .button {
+     line-height: 18px;
+     color: #ffffff;
+ }
+
+.product-info ul {
+    list-style: none;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.promo-price {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.section-price h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.table-price {
+    border-collapse: collapse;
+}
+
+.section-price-list {
+    list-style: none;
+}
+
+.table-price td{
+    border: 2px solid #000101;
 }
 
 .main-footer {
