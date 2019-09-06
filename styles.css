@@ -43,7 +43,30 @@ html {
      text-decoration: none;
  }
 
+ img {
+     width: 100%;
+     height: auto;
+ }
+
+ .visually-hidden:not(:focus):not(:active),
+ input[type="checkbox"].visually-hidden,
+ input[type="radio"].visually-hidden {
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: inset-rect(0 0 0 0);
+     overflow: hidden;
+ }
+
  .button {
+     display: inline-block;
+     padding: 10px 30px ;
+
      font-size: inherit;
 
      color: #ffffff;
@@ -108,20 +131,8 @@ html {
      padding: 0 10px;
  }
 
- .main-navigation-wrapper .container {
-     display: flex;
-     justify-content: space-between;
- }
-
-.main-navigation-wrapper-inner .container {
-    display: flex;
-    justify-content: space-between;
-}
-
  .cite-navigation,
  .user-navigation {
-     display: flex;
-
      list-style: none;
 
      margin: 0;
@@ -130,23 +141,67 @@ html {
 
  .cite-navigation a,
  .user-navigation a {
+     display: block;
+     padding: 25px 20px;
+
      color: #ffffff;
  }
 
  .cite-navigation {
+     display: flex;
+     flex-wrap: wrap;
      width: 620px;
  }
 
  .user-navigation {
-     width: 140px;
+     max-width: 140px;
  }
 
- .cite-navigation:hover,
- .cite-navigation:focus,
- .user-navigation:hover,
- .user-navigation:focus {
+ .user-navigation .login-link {
+     position: relative;
+
+     padding-left: 50px;
+ }
+
+ .login-link:before {
+     content:"";
+
+     position: absolute;
+
+     background-image: url("img/svg/login.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+
+     top: 29px;
+     left: 24px;
+
+     width: 16px;
+     height: 14px;
+
+     opacity: 0.3;
+ }
+
+ .login-link:hover::before,
+ .login-link:focus::before,
+ .login-link:active::before {
+     opacity: 1;
+ }
+
+ .cite-navigation a:hover,
+ .cite-navigation a:focus,
+ .user-navigation a:hover,
+ .user-navigation a:focus {
      background-color: #242424;
  }
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation-wrapper-inner .container {
+    display: flex;
+}
 
  .features-list {
      display: flex;
@@ -160,13 +215,36 @@ html {
 
  .feature-item{
      width: 300px;
-
      text-align: center;
  }
 
  .feature-item h3{
+     position: relative;
+
+     margin: 0 0 60px 0;
+
      font-size: 30px;
      line-height: 42px;
+ }
+
+ .feature-item h3::after {
+     content:"";
+
+     position: absolute;
+     bottom: -30px;
+     left: 50%;
+     margin-left: -10px;
+
+     width: 20px;
+     height: 20px;
+
+     background-color: #ffffff;
+
+     transform: rotate(45deg);
+ }
+
+ .feature-item p {
+     margin: 0 10px;
  }
 
  .features {
@@ -183,34 +261,53 @@ html {
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("./img/noisy background.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image:
+            url("img/line.png"),
+            url("img/noisy background.jpg");
+    background-position:
+            center,
+            0 0;
+    background-repeat:
+            no-repeat,
+            repeat;
 }
 
 .index-columns h2 {
+    margin: 0 0 25px 0;
+
     font-size: 30px;
     line-height: 42px;
 }
 
-.news {
+.index-news {
     width: 300px;
 }
 
-.gallery {
+.index-gallery {
     width: 300px;
 }
 
-.contacts {
+.index-contacts {
     width: 380px;
 }
 
-.appointment {
+.index-appointment {
     width: 300px;
 }
 
 .news-list {
-  list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p {
+    margin: 0;
 }
 
 .news-item time {
@@ -319,7 +416,6 @@ html {
 
 .item .container {
     display: flex;
-    justify-content: space-between;
 }
 
  .catalog-item b {
@@ -484,7 +580,6 @@ html {
 .login-form a:focus {
     text-decoration: none;
 }
-/* СЕТОЧНЫЕ СТИЛИ */
 
 .main-header {
     margin-bottom: 75px;
@@ -496,4 +591,5 @@ html {
     width: 368px;
     height: 153px;
 }
+
 
