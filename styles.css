@@ -68,6 +68,8 @@ html {
      padding: 10px 30px ;
 
      font-size: inherit;
+     font-weight: 700;
+     line-height: 1;
 
      color: #ffffff;
      text-align: center;
@@ -315,8 +317,40 @@ html {
 }
 
 .gallery-content {
+    height: 164px;
+    margin: 0;
+
     background-color: #cccccc;
     border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-container {
+    position: relative;
+
+    height: 268px;
+    margin: 0;
+}
+
+.gallery-button {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
 }
 
 .appointment-item input {
