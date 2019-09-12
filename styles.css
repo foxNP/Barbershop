@@ -65,7 +65,7 @@ html {
 
  .button {
      display: inline-block;
-     padding: 10px 30px ;
+     padding: 15px 34px ;
 
      font-size: inherit;
      font-weight: 700;
@@ -121,10 +121,8 @@ html {
  }
 
 .main-navigation-wrapper-inner {
-    width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 
-    background-color: #000000;
 }
 
  .container {
@@ -152,7 +150,7 @@ html {
  .cite-navigation {
      display: flex;
      flex-wrap: wrap;
-     width: 620px;
+     min-width: 620px;
  }
 
  .user-navigation {
@@ -199,10 +197,6 @@ html {
 .main-navigation-wrapper .container {
     display: flex;
     justify-content: space-between;
-}
-
-.main-navigation-wrapper-inner .container {
-    display: flex;
 }
 
  .features-list {
@@ -290,7 +284,7 @@ html {
 }
 
 .index-contacts {
-    width: 380px;
+    width: 300px;
 }
 
 .index-appointment {
@@ -329,11 +323,8 @@ html {
     height: 164px;
 }
 
-.gallery-container {
-    position: relative;
-
-    height: 268px;
-    margin: 0;
+.gallery-button-container {
+    display: flex;
 }
 
 .gallery-button {
@@ -624,6 +615,17 @@ html {
 
     width: 368px;
     height: 153px;
+}
+/*внутренняя страница товара*/
+
+.inner-page {
+
+
+    width: 1200px;
+}
+
+.cite-navigation .main-header-logo-inner {
+    padding: 22px 20px 18px 20px;
 }
 
 
