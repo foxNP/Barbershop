@@ -14,6 +14,12 @@ html {
      text-transform: uppercase;
  }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
  .main {
      padding-top: 50px;
      padding-bottom: 65px;
@@ -112,27 +118,29 @@ html {
  }
 
  .main-navigation {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+     width: 100%;
 
      font-size: 16px;
      line-height: 20px;
      color: #ffffff;
- }
-
- .main-navigation-wrapper {
-     width: 100%;
-
 
      background-color: #000000;
  }
 
- .container {
-     width: 940px;
-     margin: 0 auto;
-     padding: 0 10px;
+ .main-navigation .container {
+     display: flex;
  }
+
+.menu {
+    margin-right: auto;
+}
+
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
  .cite-navigation,
  .user-navigation {
@@ -142,13 +150,20 @@ html {
      padding: 0;
  }
 
- .cite-navigation a,
- .user-navigation a {
-     display: block;
-     padding: 25px 20px;
+.cite-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 25px 20px;
 
-     color: #ffffff;
- }
+    color: #ffffff;
+}
+
+.logo a {
+    display: block;
+    padding: 25px 20px 15px 20px;
+
+    color: #ffffff;
+}
 
  .cite-navigation {
      display: flex;
@@ -196,11 +211,6 @@ html {
  .user-navigation a:focus {
      background-color: #242424;
  }
-
-.main-navigation-wrapper .container {
-    display: flex;
-    justify-content: space-between;
-}
 
  .features-list {
      display: flex;
@@ -617,22 +627,15 @@ html {
 
 
 
-.main-header-logo {
+.main-logo {
     width: 368px;
     height: 153px;
 
     margin: 10px auto 75px auto;
 }
-/*внутренняя страница товара*/
 
-.inner-page {
-
-
-    width: 1200px;
-}
-
-.cite-navigation .main-header-logo-inner {
-    padding: 22px 20px 18px 20px;
+.index-logo {
+    position: absolute;
 }
 
 
