@@ -14,6 +14,12 @@ html {
      text-transform: uppercase;
  }
 
+ .main-header {
+     height: 72px;
+
+     background-color: #000000;
+ }
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -123,8 +129,6 @@ html {
      font-size: 16px;
      line-height: 20px;
      color: #ffffff;
-
-     background-color: #000000;
  }
 
  .main-navigation .container {
@@ -135,9 +139,9 @@ html {
     margin-right: auto;
 }
 
-
 .container {
     width: 940px;
+
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -158,11 +162,14 @@ html {
     color: #ffffff;
 }
 
-.logo a {
-    display: block;
-    padding: 25px 20px 15px 20px;
+.header-logo {
+    display: flex;
 
-    color: #ffffff;
+    align-items: center;
+}
+
+.header-logo a {
+    line-height: 1px;
 }
 
  .cite-navigation {
@@ -295,7 +302,7 @@ html {
 }
 
 .index-news {
-    width: 300px;
+    width: 350px;
 }
 
 .index-gallery {
@@ -303,7 +310,7 @@ html {
 }
 
 .index-contacts {
-    width: 300px;
+    width: 350px;
 }
 
 .index-appointment {
@@ -341,10 +348,6 @@ html {
 .gallery-content img {
     width: 286px;
     height: 164px;
-}
-
-.gallery-button-container {
-    display: flex;
 }
 
 .gallery-button {
