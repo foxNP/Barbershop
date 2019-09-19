@@ -28,7 +28,7 @@ html {
 
  .main {
      padding-top: 50px;
-     padding-bottom: 65px;
+     padding-bottom: 30px;
  }
 
  .main-index {
@@ -278,8 +278,9 @@ html {
     display: flex;
     justify-content: space-between;
 
+    margin-bottom: 35px;
+
     padding: 50px 80px;
-    margin-top: 35px;
 
     color: #000000;
 
@@ -352,10 +353,6 @@ html {
 }
 
 .gallery-button {
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 0;
-
     width: 140px;
     margin: 0;
 }
@@ -528,7 +525,9 @@ html {
 }
 
 .main-footer {
-    min-height: 190px;
+    display: flex;
+
+    height: 190px;
     color: #ffffff;
 
     background-color: #212121;
@@ -539,26 +538,40 @@ html {
 
 .main-footer .container {
     display: flex;
+
+    padding-top: 55px;
+    padding-bottom: auto;
+}
+
+.footer-contacts p {
+    margin: 0;
 }
 
 .footer-social {
     display: flex;
     flex-direction: column;
 
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.footer-social span {
     margin-left: auto;
     margin-right: auto;
 }
 
-
 .social-list {
-    width: 140px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    width: 140px;
+
+    padding: 0;
 }
 
 .social-list li {
-    width: 45px;
-    height: 45px;
+    width: 43px;
+    height: 43px;
     list-style: none;
 
     background-color: #000000;
@@ -566,6 +579,7 @@ html {
 
 .footer-contacts a {
     color: #ffffff;
+
     text-decoration: underline;
 }
 
@@ -588,13 +602,16 @@ html {
     align-items: center;
 }
 
+.footer-copyright span {
+    margin-bottom: 15px;
+}
+
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
     color: #000000;
 
     background-color: #ffffff;
 }
-
 
 .modal {
     color: #000000;
@@ -634,8 +651,6 @@ html {
 .login-form a:focus {
     text-decoration: none;
 }
-
-
 
 .main-logo {
     width: 368px;
