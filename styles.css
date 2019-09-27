@@ -280,7 +280,7 @@ html {
 
     margin-bottom: 35px;
 
-    padding: 50px 80px;
+    padding: 45px 80px 50px 80px;
 
     color: #000000;
 
@@ -297,38 +297,64 @@ html {
 }
 
 .index-columns h2 {
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
 
     font-size: 30px;
     line-height: 42px;
 }
 
 .index-news {
-    width: 350px;
+    width: 380px;
 }
 
 .index-gallery {
+    display: flex;
+    flex-direction: column;
     width: 300px;
 }
 
+.index-gallery-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .index-contacts {
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    width: 380px;
+}
+
+.index-contacts p {
+    margin: 0 0 20px 0;
+}
+
+.index-contacts-button {
+    display: flex;
+}
+
+.index-contacts-button a {
+    margin-right: 20px;
 }
 
 .index-appointment {
     width: 300px;
 }
 
+.index-appointment p {
+    margin: 0 0 10px 0;
+}
 
 .news-list {
-    margin: 0 0 25px 0;
+    margin: 0 0 30px 0;
     padding: 0;
 
     list-style: none;
 }
 
 .news-item {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .news-item p {
@@ -365,9 +391,16 @@ html {
     right: 0;
 }
 
+.appointment-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 140px;
+}
+
 .appointment-item input {
     font: inherit;
-
+    padding: 8px 15px 7px 15px;
     background-color: transparent;
     border: 2px solid #000000;
 }
@@ -375,6 +408,21 @@ html {
 .appointment-item input:focus {
     border-color: #663d15;
     outline: none;
+}
+
+.appointment-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment-item label {
+    margin-left: 15px;
+    margin-bottom: 9px;
+}
+
+.form-button {
+    margin-top: 7px;
+    width: 100%;
 }
 
 .filter ul {
@@ -571,8 +619,6 @@ html {
 
     width: 141px;
     list-style: none;
-
-    padding: 0;
 }
 
 .social-button {

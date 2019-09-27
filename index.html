@@ -83,8 +83,10 @@
                 <img src="./img/studio.jpg" width="286" height="164" alt="Интерьер">
             </a>
         </figure>
-        <button type="button" class="button gallery-button gallery-button-back">Назад</button>
-        <button type="button" class="button gallery-button gallery-button-next">Вперед</button>
+        <div class="index-gallery-button">
+          <button type="button" class="button gallery-button gallery-button-back">Назад</button>
+          <button type="button" class="button gallery-button gallery-button-next">Вперед</button>
+        </div>
     </section>
     </div>
     <div class="index-columns">
@@ -98,26 +100,32 @@
             пн-пт: с 10:00 до 22:00<br>
             сб-вс: с 10:00 до 19:00
         </p>
-        <a class="button" href="map.html">Как проехать</a>
-        <a class="button" href="contacts.html">Обратная связь</a>
+        <div class="index-contacts-button">
+          <a class="button" href="map.html">Как проехать</a>
+          <a class="button" href="contacts.html">Обратная связь</a>
+        </div>
     </section>
         <section class="index-appointment">
                 <h2>Записаться</h2>
                 <p class="appointment-form">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                 <form action="https://echo.htmlacademy.ru" method="post">
+                    <div class="appointment-column">
                     <p class="appointment-item">
                         <label for="appointment-date">Дата</label> <input type="text" name="date" id="appointment-date" value="" placeholder="08.10.2017">
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-time">Время</label> <input type="text" name="time" id="appointment-time" value="" placeholder="10.00">
                     </p>
+                    </div>
+                    <div class="appointment-column">
                     <p class="appointment-item">
                         <label for="appointment-name">Ваше имя</label> <input type="text" name="name" id="appointment-name" value="" placeholder="Борода">
                     </p>
                     <p class="appointment-item">
                         <label for="appointment-phone">Телефон</label> <input type="tel" name="phone" id="appointment-phone" value="" placeholder="+7 123 456-78-90">
                     </p>
-                    <button class="button" type="submit">Отправить</button>
+                    </div>
+                    <button class="button form-button" type="submit">Отправить</button>
                 </form>
         </section>
     </div>
