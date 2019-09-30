@@ -462,7 +462,7 @@ html {
 
 .filter-option label {
     display: block;
-
+    position: relative;
     border: none;
     cursor: pointer;
     user-select: none;
@@ -479,6 +479,31 @@ html {
     height: 16px;
 
     border: 2px solid #000000;
+}
+
+.filter-input-checkbox + label::after {
+    content: "";
+
+    position: absolute;
+    left: -38px;
+    top: 5px;
+
+    width: 10px;
+    height: 5px;
+
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.filter-input-checkbox:checked + label::after {
+    opacity: 100;
+}
+
+.filter-input {
+    position: absolute;
 }
 
 .filter legend {
