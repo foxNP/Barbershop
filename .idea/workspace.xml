@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47dbb3fc-254c-4ab2-9c92-f5e8a4094679" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog-item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
+            <state relative-caret-position="630">
               <caret line="66" column="24" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="43" />
             </state>
           </provider>
@@ -30,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/price.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
+            <state relative-caret-position="476">
               <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
             </state>
           </provider>
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="494" column="37" lean-forward="true" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="37" />
+            <state relative-caret-position="284">
+              <caret line="610" lean-forward="true" selection-start-line="610" selection-end-line="610" />
             </state>
           </provider>
         </entry>
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="210" column="37" selection-start-line="210" selection-start-column="37" selection-end-line="210" selection-end-column="37" />
+            <state relative-caret-position="188">
+              <caret line="213" column="71" selection-start-line="213" selection-start-column="71" selection-end-line="213" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -75,8 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>h1</find>
-      <find>promo-</find>
       <find>promo</find>
       <find>section-price</find>
       <find>bread</find>
@@ -105,6 +104,8 @@
       <find>rel</find>
       <find>rela</find>
       <find>posi</find>
+      <find>transition</find>
+      <find>pagination-item-current</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,6 +146,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,15 +201,25 @@
       <workItem from="1568283216109" duration="15172000" />
       <workItem from="1569650199679" duration="16634000" />
       <workItem from="1569772254494" duration="16978000" />
-      <workItem from="1569868033835" duration="2000000" />
+      <workItem from="1569868033835" duration="2058000" />
+      <workItem from="1569956125696" duration="2914000" />
     </task>
+    <task id="LOCAL-00001" summary="checkbox">
+      <created>1569880009552</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569880009552</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42065000" />
+    <option name="totallyTimeSpent" value="45037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -222,7 +233,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.391453" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2905983" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2905983" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -285,6 +296,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="checkbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkbox" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -295,24 +308,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog-item.html">
+    <entry file="file://$PROJECT_DIR$/price.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="66" column="24" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="43" />
+        <state relative-caret-position="476">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/price.html">
+    <entry file="file://$PROJECT_DIR$/catalog-item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        <state relative-caret-position="630">
+          <caret line="66" column="24" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="210" column="37" selection-start-line="210" selection-start-column="37" selection-end-line="210" selection-end-column="37" />
+        <state relative-caret-position="188">
+          <caret line="213" column="71" selection-start-line="213" selection-start-column="71" selection-end-line="213" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -325,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="494" column="37" lean-forward="true" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="37" />
+        <state relative-caret-position="284">
+          <caret line="610" lean-forward="true" selection-start-line="610" selection-end-line="610" />
         </state>
       </provider>
     </entry>
