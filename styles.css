@@ -180,8 +180,10 @@ html {
 .cite-navigation a,
 .user-navigation a {
     display: block;
-    padding: 26px 20px;
 
+    position: relative;
+
+    padding: 26px 20px;
     color: #ffffff;
 }
 
@@ -243,6 +245,19 @@ html {
  .user-navigation a:hover,
  .user-navigation a:focus {
      background-color: #242424;
+ }
+
+.cite-navigation-current::after {
+     content: "";
+     top: 68px;
+     left: 20px;
+
+     position: absolute;
+
+     width: calc(100% - 40px);
+     height: 4px;
+
+     background-color: #ffffff;
  }
 
  .features-list {
@@ -456,7 +471,7 @@ html {
 }
 
 .filter-option {
-    margin-bottom: 19px;
+    padding-bottom: 19px;
     padding-left: 45px;
 }
 
@@ -482,23 +497,55 @@ html {
 }
 
 .filter-input-checkbox + label::after {
+    content: url("./img/svg/cross.svg");
+
+    position: absolute;
+    left: -38px;
+    top: 2px;
+
+    width: 10px;
+    height: 10px;
+
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.filter-input-checkbox:checked + label::after {
+    opacity: 100;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+
+    position: absolute;
+    left: -44px;
+    top: -1px;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    border: 2px solid #000000;
+}
+
+.filter-input-radio + label::after {
     content: "";
 
     position: absolute;
     left: -38px;
     top: 5px;
 
-    width: 10px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 
-    border-left: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    transform: rotate(-45deg);
+    background-color: #000000;
+
     opacity: 0;
     transition: opacity 400ms;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-radio:checked + label::after {
     opacity: 100;
 }
 
@@ -520,6 +567,13 @@ html {
     color: #000000;
 
     opacity: 0.5;
+}
+
+.filter-button {
+    width: 112px;
+    align-items: center;
+
+    margin-top: -10px;
 }
 
 .pagination {
@@ -675,6 +729,8 @@ html {
 
 .catalog-item:hover {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+
+    transition: 400ms;
 }
 
 .catalog-item a {
@@ -839,13 +895,14 @@ html {
 .filter fieldset {
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
 
     border: none;
 }
 
 .filter legend {
     line-height: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .filters {
