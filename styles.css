@@ -16,7 +16,7 @@ body {
 }
 
 .main-header {
-    height: 72px;
+    min-height: 72px;
 
     background-color: #000000;
 }
@@ -795,7 +795,7 @@ input[type="radio"].visually-hidden {
 
 .section-price-row {
     display: flex;
-
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
@@ -821,8 +821,10 @@ input[type="radio"].visually-hidden {
 }
 
 .column-item {
-    width: 50%;
+    width: 462px;
+    box-sizing: border-box;
 }
+
 
 .section-price h2 {
     font-size: 30px;
@@ -1163,6 +1165,37 @@ input[type="radio"].visually-hidden {
     color: #663d15;
 }
 
+.login-checkbox::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+}
+
+.checkbox-indicator::before,
+.checkbox-indicator::after {
+    position: absolute;
+    top: 4px;
+    left: -18px;
+
+    content: "";
+    width: 3px;
+    height: 18px;
+    background-color: #000000;
+}
+
+.checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
 .login-form a {
     color: #000000;
     text-decoration: underline;
@@ -1178,6 +1211,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-help {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
